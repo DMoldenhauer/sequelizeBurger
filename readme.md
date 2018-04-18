@@ -1,0 +1,2 @@
+# Burger
+A restaurant app that lets users input names of burgers they'd like to eat.  Whenever a user submits a burger's name, the app displays the burger on the left side.  Each burger has a Devour It button.  When the user clicks it, the burger will move to the right side of the page.  Utilizes MySQL, Node, Express, Handlebars and custom ORM. Follows the MVC design pattern.

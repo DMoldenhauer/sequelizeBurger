@@ -1,0 +1,67 @@
+<div class="container">
+    {{!-- burger image and title row --}}
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="assets/img/burgers.jpg" alt="burger picture">
+            <h1>Eat-Da-Burger!</h1>
+        </div>
+    </div>
+    {{!-- burger lists row --}}
+    <div class="row">
+        {{!-- uneaten burgers --}}
+        <div class="col-sm-5">
+            <ul class="list-group">
+                {{#each burgers}} 
+                {{#unless devoured}}
+                <li class="list-group-item">{{item_id}}. {{burger_name}}</li>
+                {{/unless}} 
+                {{/each}}
+            </ul>
+        </div>
+        {{!-- devour it buttons --}}
+
+        <div class="col-sm-2">
+            {{#each burgers}} 
+            {{#unless devoured}}
+            {{!-- look at click handler from giphy --}}
+            <form >
+            <input input type="hidden" type="text" name="item_id" >
+                <div id='buttDisplay'>
+                    <button type='submit' class="btn btn-primary btn-sm devButton" data-item_id={{this.item_id}}>Devour</button>
+                </div>
+            </form>
+            {{/unless}} 
+            {{/each}}
+        </div>
+
+        {{!-- eaten burgers --}}
+        <div class="col-sm-5">
+            <ul class="list-group">
+                {{#each burgers}} 
+                {{#if this.devoured}}
+                <li class="list-group-item">{{item_id}}. {{burger_name}}</li>
+                {{/if}} 
+                {{/each}}
+
+            </ul>
+        </div>
+    </div>
+    {{!-- text entry/submit/instructions row --}}
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <form class="burger-form">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter a burger you want to eat. Then click the "Submit" button</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary subBttn" id="subB">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+

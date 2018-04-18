@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A restaurant app that lets users input names of burgers they'd like to eat.  Whenever a user submits a burger's name, the app displays the burger on the left side.  Each burger has a Devour It button.  When the user clicks it, the burger will move to the right side of the page.  Utilizes MySQL, Node, Express, Handlebars and custom ORM. Follows the MVC design pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMoldenhauer/Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMoldenhauer/Burger/issues"
+  },
+  "homepage": "https://github.com/DMoldenhauer/Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.17.3",
+    "path": "^0.12.7"
+  }
+}

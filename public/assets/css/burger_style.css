@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(187, 164, 61);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 10px;
+    border: 2px solid red;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+.form-group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+}
+
+#subB {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.btn-primary {
+    background-color: rgb(75, 49, 9);
+    border-color: red;
+    margin-bottom: 10px;
+}
+
+.btn-sm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+
+}
