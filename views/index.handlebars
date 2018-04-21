@@ -13,7 +13,7 @@
             <ul class="list-group">
                 {{#each burgers}} 
                 {{#unless devoured}}
-                <li class="list-group-item">{{item_id}}. {{burger_name}}</li>
+                <li class="list-group-item">{{id}}. {{burger_name}}</li>
                 {{/unless}} 
                 {{/each}}
             </ul>
@@ -23,11 +23,11 @@
         <div class="col-sm-2">
             {{#each burgers}} 
             {{#unless devoured}}
-            {{!-- look at click handler from giphy --}}
+            
             <form >
             <input input type="hidden" type="text" name="item_id" >
                 <div id='buttDisplay'>
-                    <button type='submit' class="btn btn-primary btn-sm devButton" data-item_id={{this.item_id}}>Devour</button>
+                    <button type='submit' class="btn btn-primary btn-sm devButton" data-item_id={{this.id}}>Devour</button>
                 </div>
             </form>
             {{/unless}} 
@@ -39,7 +39,7 @@
             <ul class="list-group">
                 {{#each burgers}} 
                 {{#if this.devoured}}
-                <li class="list-group-item">{{item_id}}. {{burger_name}}</li>
+                <li class="list-group-item">{{id}}. {{burger_name}}</li>
                 {{/if}} 
                 {{/each}}
 
